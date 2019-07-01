@@ -1,48 +1,118 @@
-*{
-    margin: 0px;
-    padding: 0px;
+body{
+    margin:auto 0;
+    background-color:#dfdfdf;
 }
 
-body{
-    background: url("background.jpg")center center fixed;
-    background-size:cover; 
-    font-family: 'Merriweather', serif;
+.navbox{
+    font-size: 2em;
+    border-radius: 4px;
+    transition:all 0.3s linear;
+}
+
+.boxsection2{
+    border-radius: 4px;
+    transition:all 0.3s linear;
+}
+
+.allbox{
+    font-size: 2em;
+    border-radius: 10px;
+    transition:all 0.3s linear;
+}
+
+.Mainnav{
+    display:flex;
+    flex-direction: row;
+    justify-content:start;
+    list-style: none;
+    font-size: 0.6em;
+    margin: 0%;
+}
+
+.Push{
+    margin-left:auto;
+    color:black;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+ul li:hover{
+    background:#4286f4;
+    transition: 1s;
+}
+/*
+a:hover{
+
+}*/
+
+
+.blue{
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4286f4,#063276);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4286f4, #063276); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    /* responsive container vh= viewport height */
+    height: 65vh;
+}
+
+.cover{
+    width:45rem;
+}
+
+
+.grid-wrap{
+    display: grid;
+    justify-content:center;
+    align-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,500px));
+  
+}
+
+.box > img{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    margin:10px;
+    border-radius: 15px;
+}
+
+.box img{
+    border-radius: 15px;
+}
+h1{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 2.8em;
+    color:white;
+}
+
+@media only screen and (max-width:600px){
+    .Mainnav{
+        font-size:0.5em;
+        padding:0;
+    }
+    h1{
+        font-size: 2em;
+        padding-top: 5%;
+    }
+    .cover{
+        width:30rem;
+    }
     
 }
-
-h1{
-    color:#fff;
-    text-shadow:2px 2px 5px rgb(57, 172, 172);
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-size:3vw;
-    line-height: 1.5;
-}
-
-.buttonman{
-    display: inline-block;
-    border-radius: 30px;
-    background-color: #fa6f44;
-    border:none;
-    color:#fff;
-    text-align: center;
-    font-size: 0.9 rem;
-    font-weight: bold;
-    width:200px;
-    padding:15px;
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    text-align: center;
-    transform: translate(-50%, -50%)
-}
-
-.buttonman:hover {
-    background-color: #f4511e;
-    color:rgb(238, 238, 238);
-    transition: 0.5s;
-  }
-
